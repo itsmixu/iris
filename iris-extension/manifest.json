@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "IRIS",
+    "version": "0.1",
+
+    "description": "Stay mindful of your social media usage, and get more done",
+
+    "icons": {
+        "48": "icons/iris-48.png"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["*://*.mozilla.org/*"],
+            "js": ["iris.js"]
+        }
+    ]
+}
