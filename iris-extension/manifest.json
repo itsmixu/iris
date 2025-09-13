@@ -4,14 +4,23 @@
     "version": "0.1",
 
     "description": "Stay mindful of your social media usage, and get more done",
+    "homepage_url": "https://github.com/itsmixu/iris",
 
     "icons": {
         "48": "icons/iris-48.png"
     },
 
+    "permissions": ["activeTab"],
+    
+    "browser_action": {
+        "default_icon": "icons/iris-32.png",
+        "default_title": "IRIS",
+        "default_popup": "popup/iris.html"
+    },
+
+
     "content_scripts": [
         {
-            "matches": ["*://*.mozilla.org/*"],
             "js": ["iris.js"]
         }
     ]
