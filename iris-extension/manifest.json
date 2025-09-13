@@ -19,8 +19,11 @@
     },
 
 
+
+
     "content_scripts": [
         {
+            "matches": ["*://*.mozilla.org/*"],
             "js": ["iris.js"]
         }
     ]
